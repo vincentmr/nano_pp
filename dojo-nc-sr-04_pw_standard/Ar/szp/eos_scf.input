@@ -1,0 +1,11 @@
+info.savepath = './results/scf_fxfacx'
+info.outfile = 'fscf_fxfacx.out'
+info.calculationType = 'self-consistent'
+functional.list = {'XC_LDA_X','XC_LDA_C_PW'}
+kpoint.sampling = 'gauss'
+mixing.tol = [1e-7 1e-7]
+mixing.type = 'density'
+force.status = false
+smi.lwork = 2^20
+units.length = 'ang'
+

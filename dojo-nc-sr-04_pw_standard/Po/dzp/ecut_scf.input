@@ -1,0 +1,18 @@
+info.savepath = './results/scf_fxfacx'
+info.outfile = 'fscf_fxfacx.out'
+info.calculationType = 'self-consistent'
+domain.lowres = xfacx / 100
+functional.list = {'XC_LDA_X','XC_LDA_C_PW'}
+kpoint.gridn = [5,5,5]
+kpoint.sampling = 'gauss'
+mixing.tol = [1e-7 1e-7]
+mixing.type = 'density'
+force.status = false
+smi.lwork = 2^20
+units.length = 'ang'
+
+domain.latvec = [+3.348180000000000e+00,+0.000000000000000e+00,+0.000000000000000e+00;+0.000000000000000e+00,+3.348180000000000e+00,+0.000000000000000e+00;+0.000000000000000e+00,+0.000000000000000e+00,+3.348180000000000e+00;]
+atom.xyz = 'Po.xyz'
+element.species = 'Po'
+element.path = '../../Po_DZP.mat'
+LCAO.status = 1

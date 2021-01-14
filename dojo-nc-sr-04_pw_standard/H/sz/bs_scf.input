@@ -1,0 +1,19 @@
+info.savepath = './results/scf'
+info.outfile = 'fscf.out'
+info.calculationType = 'self-consistent'
+functional.list = {'XC_LDA_X','XC_LDA_C_PW'}
+kpoint.sampling = 'gauss'
+mixing.tol = [1e-7 1e-7]
+mixing.type = 'density'
+force.status = false
+smi.lwork = 2^20
+units.length = 'ang'
+
+domain.lowres = 0.450000
+kpoint.gridn = [3,3,2]
+kpoint.shift = mod(kpoint.gridn+1,2)/2
+domain.latvec = [+4.007590000000000e+00,+0.000000000000000e+00,+0.000000000000000e+00;-2.003794999999999e+00,+3.470674747952479e+00,+0.000000000000000e+00;+0.000000000000000e+00,+0.000000000000000e+00,+5.003070000000000e+00;]
+atom.xyz = 'H.xyz'
+element.species = 'H'
+element.path = '../../H_SZ.mat'
+LCAO.status = 1
