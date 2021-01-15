@@ -1,0 +1,21 @@
+info.savepath = './results/scf_fxfacx'
+info.outfile = 'fscf_fxfacx.out'
+info.calculationType = 'self-consistent'
+domain.lowres = xfacx / 100
+functional.list = {'XC_GGA_X_PBE','XC_GGA_C_PBE'}
+kpoint.sampling = 'gauss'
+kpoint.sigma = 0.1
+mixing.tol = [1e-7 1e-7]
+mixing.type = 'density'
+force.status = false
+smi.lwork = 2^20
+units.length = 'ang'
+units.energy = 'ev'
+
+kpoint.gridn = [5,5,4]
+kpoint.shift = mod(kpoint.gridn+1,2)/2
+domain.latvec = [+4.524638000000000e+00,+0.000000000000000e+00,+0.000000000000000e+00;-2.262318999999999e+00,+3.918451450928416e+00,+0.000000000000000e+00;+0.000000000000000e+00,+0.000000000000000e+00,+5.049778000000000e+00;]
+atom.xyz = 'Se.xyz'
+element.species = 'Se'
+element.path = '../../Se_SZP.mat'
+option.precision = 'pw-high'

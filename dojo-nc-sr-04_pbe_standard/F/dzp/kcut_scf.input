@@ -1,0 +1,19 @@
+info.savepath = './results/scf_fxfacx'
+info.outfile = 'fscf_fxfacx.out'
+info.calculationType = 'self-consistent'
+domain.lowres = 0.22
+functional.list = {'XC_GGA_X_PBE','XC_GGA_C_PBE'}
+kpoint.sampling = 'gauss'
+mixing.tol = [1e-7 1e-7]
+mixing.type = 'density'
+force.status = false
+smi.lwork = 2^20
+units.length = 'ang'
+
+kpoint.gridn = round(xfacx*[6.021264437453e-01,5.358462779543e-01,1.000000000000e+00])
+kpoint.shift = mod(kpoint.gridn+1,2)/2
+domain.latvec = [+6.163098000000000e+00,+0.000000000000000e+00,+0.000000000000000e+00;+8.170430406324418e-01,+6.877061858241722e+00,+0.000000000000000e+00;+0.000000000000000e+00,+0.000000000000000e+00,+3.685048000000000e+00;]
+atom.xyz = 'F.xyz'
+element.species = 'F'
+element.path = '../../F_DZP.mat'
+LCAO.status = 1

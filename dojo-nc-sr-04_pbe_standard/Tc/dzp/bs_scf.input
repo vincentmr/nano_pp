@@ -1,0 +1,19 @@
+info.savepath = './results/scf'
+info.outfile = 'fscf.out'
+info.calculationType = 'self-consistent'
+functional.list = {'XC_GGA_X_PBE','XC_GGA_C_PBE'}
+kpoint.sampling = 'gauss'
+mixing.tol = [1e-7 1e-7]
+mixing.type = 'density'
+force.status = false
+smi.lwork = 2^20
+units.length = 'ang'
+
+domain.lowres = 0.300000
+kpoint.gridn = [8,8,4]
+kpoint.shift = mod(kpoint.gridn+1,2)/2
+domain.latvec = [+2.761869000000000e+00,+0.000000000000000e+00,+0.000000000000000e+00;-1.380934499999999e+00,+2.391848715924724e+00,+0.000000000000000e+00;+0.000000000000000e+00,+0.000000000000000e+00,+4.419048000000000e+00;]
+atom.xyz = 'Tc.xyz'
+element.species = 'Tc'
+element.path = '../../Tc_DZP.mat'
+LCAO.status = 1

@@ -1,0 +1,19 @@
+info.savepath = './results/scf'
+info.outfile = 'fscf.out'
+info.calculationType = 'self-consistent'
+functional.list = {'XC_GGA_X_PBE','XC_GGA_C_PBE'}
+kpoint.sampling = 'gauss'
+mixing.tol = [1e-7 1e-7]
+mixing.type = 'density'
+force.status = false
+smi.lwork = 2^20
+units.length = 'ang'
+
+domain.lowres = 0.220000
+kpoint.gridn = [8,8,8]
+kpoint.shift = mod(kpoint.gridn+1,2)/2
+domain.latvec = [+9.418130000000000e+00,+0.000000000000000e+00,+0.000000000000000e+00;+8.674434153712856e+00,+3.668155505127873e+00,+0.000000000000000e+00;+8.674434153712856e+00,+1.758687885502471e+00,+3.219065350561678e+00;]
+atom.xyz = 'Na.xyz'
+element.species = 'Na'
+element.path = '../../Na_SZP.mat'
+LCAO.status = 1
